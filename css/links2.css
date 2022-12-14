@@ -1,0 +1,190 @@
+body {
+  background-color: #000000;
+  animation-name: sivu;
+  transition: opacity 300ms ease-in-out;
+  animation-duration: 1s;
+}
+#myvideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  filter: blur(6px);
+}
+
+.Valikko{
+  border: 1px solid red;
+}
+
+
+.Linkit{
+  position:relative;
+  width: 780px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+
+
+@keyframes sivu {
+0% {opacity: 0;}
+10% {opacity: 0.10;}
+20% {opacity: 0.20;}
+30%{opacity: 0.30;}
+40% {opacity: 0.40;}
+50%{opacity: 0.50;}
+60% {opacity: 0.60;}
+70% {opacity: 0.70;}
+80% {opacity: 0.80;}
+90% {opacity: 0.90;}
+100%{opacity: 1;}
+}
+
+
+.Valikko .btn {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: larger;
+  width: 150px;
+  background-color: var(--backround-color);
+  color: rgb(245, 245, 245);
+  padding: 10px;
+  border: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  --backround-color: #00000000;
+
+}
+
+
+.Valikko .btn {
+  margin-top: 20px;
+  color: #ffffff70;
+  transition: all 0.5s;
+  position: relative;
+}
+
+.Valikko .btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+
+.Valikko .btn:hover::before {
+  opacity: 0 ;
+  transform: scale(0.5,0.5);
+}
+
+
+.Valikko .btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 2px solid #ffffff70;
+  transform: scale(1.2,1.2);
+}
+
+
+.Valikko .btn:hover::after {
+  opacity: 1;
+  transform: scale(1,1);
+}
+
+
+.Valikko .btn.btn-n1{
+    float:right;
+    margin-right: 10px;
+}
+
+
+.Valikko .btn.btn-n2{
+    float:right;
+    margin-right: 40px;
+}
+
+.Valikko .btn.btn-n3{
+    float:right;
+    margin-right: 40px;
+}
+
+.Valikko .btn.btn-n4{
+    float:right;
+    margin-right: 40px;
+    
+}
+
+.h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1cm;
+  position: absolute;
+  margin-left: 340px;
+  margin-top: -50px;
+  color: #ffffff70;
+}
+
+.ln{
+  transition: all 0.3s ease;
+  border: 1px solid #ffffff2f;
+}
+
+.ln:hover{
+  transform:scale(1.25) perspective(1px)
+}
+
+
+.ln.ln-1{
+  cursor: pointer;
+  background-image: url(../images/steambackground2.png);
+  width: 780px;
+  height: 56px;
+}
+
+
+.ln.ln-2{
+  cursor: pointer;
+  background-image: url(../images/wowbackground1.png);
+  margin-top: 10px;
+  width: 780px;
+  height: 56px;
+}
+
+
+.ln.ln-3{
+  cursor: pointer;
+  background-image: url(../images/checkpvp1.png);
+  margin-top: 10px;
+  width: 780px;
+  height: 56px;
+}
+
+
+.ln.ln-4{
+  cursor: pointer;
+  background-image: url(../images/Osu!background.png);
+  margin-top: 10px;
+  width: 780px;
+  height: 56px;
+}
+
+
+.ln.ln-5{
+  cursor: pointer;
+  background-image: url(../images/Myanimelistbackground.png);
+  margin-top: 10px;
+  width: 780px;
+  height: 50px;
+}

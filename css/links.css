@@ -1,0 +1,169 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: smaller;
+    background-color: rgb(18, 30, 56);
+    background-image: url(../images/digital-art-simple-background-minimalism-texture-circle-atmosphere-256397-wallhere.com.jpg);
+    animation-name: sivu;
+    transition: opacity 300ms ease-in-out;
+    animation-duration: 1s;
+}
+
+
+.wrap {
+    width: 780px;
+    height: 750px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: #00000070;
+
+}
+
+.Päävalikko .kuva {
+    width: 80px;
+    height: 80px;
+    margin-top: -50px;
+}
+
+.Päävalikko .kuva2 {
+    width: 700px;
+    height: 80px;
+    margin-top: -80px;
+    margin-left: 80px;
+}
+
+
+
+.teksti {
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: 0.5cm;
+    margin: 10px;
+}
+
+
+
+@keyframes sivu {
+0% {opacity: 0;}
+10% {opacity: 0.10;}
+20% {opacity: 0.20;}
+30%{opacity: 0.30;}
+40% {opacity: 0.40;}
+50%{opacity: 0.50;}
+60% {opacity: 0.60;}
+70% {opacity: 0.70;}
+80% {opacity: 0.80;}
+90% {opacity: 0.90;}
+100%{opacity: 1;}
+}
+
+.nappivalikko {
+    margin: 1rem;
+    margin-left: 23px;
+    margin-top: -40px;
+}
+
+
+.btn {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 240px;
+    background-color: var(--backround-color);
+    color: rgba(0, 255, 255, 0.548);
+    padding: 10px;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+
+    --backround-color: #181010;
+    --accent-color: rgba(0, 255, 255, 0.356);
+
+}
+
+.btn.btn-n1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: var(--accent-color);
+
+    transition: transform 500ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+
+}
+
+.btn.btn-n1:hover::before,
+.btn.btn-n1:focus::before{
+    transform: scaleX(1);
+}
+
+.btn.btn-n1{
+    z-index: 1;
+}
+
+
+.sinitausta{
+    width: 780px;
+    height: 50px;
+    background-color: rgba(0, 255, 255, 0.356);
+    margin-top: -20px;
+}
+
+
+.Linkit{
+    display: block;
+
+    
+}
+
+.ln{
+    transition: all 0.3s ease;
+}
+
+.ln:hover{
+    transform:scale(1.25) perspective(1px)
+}
+
+
+.ln.ln-1{
+    cursor: pointer;
+    background-image: url(../images/steambackground2.png);
+    width: 780px;
+    height: 56px;
+}
+.ln.ln-2{
+    cursor: pointer;
+    background-image: url(../images/wowbackground1.png);
+    margin-top: 5px;
+    width: 780px;
+    height: 56px;
+}
+.ln.ln-3{
+    cursor: pointer;
+    background-image: url(../images/checkpvp1.png);
+    margin-top: 5px;
+    width: 780px;
+    height: 56px;
+}
+.ln.ln-4{
+    cursor: pointer;
+    background-image: url(../images/Osu!background.png);
+    margin-top: 5px;
+    width: 780px;
+    height: 56px;
+}
+.ln.ln-5{
+    cursor: pointer;
+    background-image: url(../images/Myanimelistbackground.png);
+    margin-top: 5px;
+    width: 780px;
+    height: 50px;
+}
+
+.Lippu {
+    float: right;
+    margin-top: 218px;
+}
