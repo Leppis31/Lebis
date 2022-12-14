@@ -2,9 +2,6 @@ body {
   background-color: #000000;
   font-family: 'Courier New', Courier, monospace;
   font-size: smaller;
-  animation-name: sivu;
-  transition: opacity 300ms ease-in-out;
-  animation-duration: 1s;
 }
 #myvideo {
   position: fixed;
@@ -16,7 +13,7 @@ body {
 }
 
 .Valikko{
-  border: 1px solid red;
+  border: 1px solid black;
 }
 
 .Me{
@@ -29,21 +26,6 @@ body {
   background-color: #ffffff70;
 }
 
-
-
-@keyframes sivu {
-0% {opacity: 0;}
-10% {opacity: 0.10;}
-20% {opacity: 0.20;}
-30%{opacity: 0.30;}
-40% {opacity: 0.40;}
-50%{opacity: 0.50;}
-60% {opacity: 0.60;}
-70% {opacity: 0.70;}
-80% {opacity: 0.80;}
-90% {opacity: 0.90;}
-100%{opacity: 1;}
-}
 
 
 .Valikko .btn {
