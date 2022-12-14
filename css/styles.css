@@ -1,7 +1,6 @@
 body {
     background-color: #000000;
     font-family: 'Courier New', Courier, monospace;
-    font-size: smaller;
     animation-name: sivu;
     transition: opacity 300ms ease-in-out;
     animation-duration: 1s;
