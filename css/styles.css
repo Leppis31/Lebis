@@ -1,0 +1,175 @@
+body {
+    background-color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    transition: opacity 300ms ease-in-out;
+    animation-duration: 1s;
+}
+#myvideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.Valikko{
+  border: 1px solid black;
+  height: 100px;
+  position: relative;
+  margin-right: 15px;
+}
+
+.sisältö{
+  max-width: 100%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position:relative;
+  font-size: 2cm;
+  width: 780px;
+  height: 600px;
+  color:  #ffffff70;
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.h2{
+    font-size: small
+}
+
+
+@keyframes sivu {
+0% {opacity: 0;}
+10% {opacity: 0.10;}
+20% {opacity: 0.20;}
+30%{opacity: 0.30;}
+40% {opacity: 0.40;}
+50%{opacity: 0.50;}
+60% {opacity: 0.60;}
+70% {opacity: 0.70;}
+80% {opacity: 0.80;}
+90% {opacity: 0.90;}
+100%{opacity: 1;}
+}
+
+.Valikko .btn {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: larger;
+  width: 150px;
+  background-color: var(--backround-color);
+  color: rgb(245, 245, 245);
+  padding: 10px;
+  border: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  --backround-color: #00000000;
+
+}
+
+.Valikko .btn {
+  margin-top: 20px;
+  color: #ffffff70;
+  transition: all 0.5s;
+  position: relative;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f100; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #ffffff70; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(54, 53, 53); 
+}
+
+
+
+
+
+
+
+
+
+.Valikko .btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+.Valikko .btn:hover::before {
+  opacity: 0 ;
+  transform: scale(0.5,0.5);
+}
+
+.Valikko .btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 2px solid #ffffff70;
+  transform: scale(1.2,1.2);
+}
+
+.Valikko .btn:hover::after {
+  opacity: 1;
+  transform: scale(1,1);
+  border-radius: 5px;
+}
+
+
+.Valikko .btn.btn-n1{
+  float:right;
+  margin-right: 10px;
+}
+.Valikko .btn.btn-n2{
+  float:right;
+  margin-right: 40px;
+}
+
+.Valikko .btn.btn-n3{
+  float:right;
+  margin-right: 40px;
+}
+
+.Valikko .btn.btn-n4{
+  float:right;
+  margin-right: 40px;
+    
+}
+
+
+@media (max-width: 800px) {
+  .Valikko .btn.btn-n4, .Valikko .btn.btn-n3, .Valikko .btn.btn-n2, .Valikko .btn.btn-n1{
+    width: 50px;
+    height: 50px;
+    font-size: small;
+    
+   
+  }
+}
+
+@media (max-width: 800px) {
+  .sisältö .h1{
+    font-size: 100%;
+    
+   
+  }
+}
